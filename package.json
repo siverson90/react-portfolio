@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "react-router": "^4.2.0"
+  },
+  "name": "react-portfolio",
+  "version": "1.0.0",
+  "description": "Josh's portfolio",
+  "main": "index.js",
+  "repository": "https://github.com/siverson90/react-portfolio.git",
+  "author": "Josh Siverson <28927991+siverson90@users.noreply.github.com>",
+  "license": "MIT"
+}
