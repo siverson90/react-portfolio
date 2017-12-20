@@ -1,6 +1,22 @@
 import React, { Component } from "react";
-import HeroImg from "../HeroImg/HeroImg.js";
+import coffee from './coffee.jpg';
 
+const heroStyle = {
+  backgroundImage: 'url(' + coffee + ')',
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  width: "100wh",
+  height: "100vh",
+  display: "flex"
+};
+
+const displayHeroText = {
+  width: "400px",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  margin: "auto",
+};
 
 class Hero extends Component {
 
@@ -13,9 +29,12 @@ class Hero extends Component {
 
   render() {
     return (
-        <section>
-          <h1>Hero</h1>
-          <HeroImg />
+        <section style={heroStyle}>
+          <div style={displayHeroText}>
+            <h1 >Hi! Josh</h1>
+            <h2>Learn more about me</h2>
+            <button>See more stuff</button>
+          </div>
         </section>
     )
   }
