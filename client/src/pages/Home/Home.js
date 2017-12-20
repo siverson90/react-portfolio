@@ -1,5 +1,14 @@
 import React, { Component } from "react";
-import Hero from '../../components/Hero/Hero.js';
+import Hero from '../../components/Hero';
+import Projects from '../../components/Projects';
+import Contact from '../../components/Contact';
+import Technology from '../../components/Technology';
+
+ const sectionStyle = {
+      width: "100wh",
+      height: "100vh",
+      display: "flex"
+    }
 
 class Home extends Component {
 
@@ -11,18 +20,21 @@ class Home extends Component {
   // languages I am focused on
 
   render() {
+
     return (
       <div className="container">
-        <Hero />
-        <section>
-          <h1>Projects</h1>
-        </section>
-        <section>
-          <h1>Technology</h1>
-        </section>
-         <section>
-          <h1>contact</h1>
-        </section>
+        <Hero 
+          style={sectionStyle}
+        />
+        <Projects 
+          style={sectionStyle}
+        />
+        <Technology 
+          style={sectionStyle}
+        />
+         <Contact 
+          style={sectionStyle}
+        />
       </div>
     )
   }

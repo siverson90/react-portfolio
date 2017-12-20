@@ -1,14 +1,6 @@
 import React, { Component } from "react";
 import coffee from './coffee.jpg';
 
-const heroStyle = {
-  backgroundImage: 'url(' + coffee + ')',
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-  width: "100wh",
-  height: "100vh",
-  display: "flex"
-};
 
 const displayHeroText = {
   width: "400px",
@@ -28,8 +20,14 @@ class Hero extends Component {
   // languages I am focused on
 
   render() {
+    const heroStyle = {
+      backgroundImage: 'url(' + coffee + ')',
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    };
+
     return (
-        <section style={heroStyle}>
+        <section style={Object.assign({}, heroStyle, this.props.style)}>
           <div style={displayHeroText}>
             <h1 >Hi! Josh</h1>
             <h2>Learn more about me</h2>
