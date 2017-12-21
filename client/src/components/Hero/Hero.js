@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import coffee from './coffee.jpg';
+import Scrollchor from 'react-scrollchor';
 
 
 const displayHeroText = {
@@ -31,7 +32,10 @@ class Hero extends Component {
           <div style={displayHeroText}>
             <h1 >Hi! Josh</h1>
             <h2>Learn more about me</h2>
-            <button>See more stuff</button>
+            <button><Scrollchor 
+                to="#portfolio" 
+                className="nav-link" 
+                animate={{offset: 10, duration: 700}}>Seem more info</Scrollchor></button>
           </div>
         </section>
     )

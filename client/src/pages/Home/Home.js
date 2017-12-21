@@ -4,21 +4,19 @@ import Portfolio from '../../components/Portfolio';
 import Contact from '../../components/Contact';
 import Technology from '../../components/Technology';
 import NavBar from '../../components/Navbar';
+// import NavWrapper from '../../components/Sticky'
 
  const sectionStyle = {
       width: "100wh",
       height: "100vh",
-      display: "flex"
+      display: "flex",
+      backgroundColor: "grey",
+      flexDirection: "row"
     }
 
 class Home extends Component {
 
-  // components should include:
-  // Portfolio/work
-  // Contact
-  // About me section
-  // Languages to show experience
-  // languages I am focused on
+
 
   render() {
 

@@ -5,7 +5,9 @@ class Contact extends Component {
   render() {
     return (
       <section id="contact" style={this.props.style}>
-        <h1>Contact</h1>
+        <div className="container">
+          <h1>Contact</h1>
+        </div>
       </section>
     )
   }

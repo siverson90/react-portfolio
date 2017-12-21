@@ -1,11 +1,15 @@
 import React, { Component } from "react";
+import GalleryImages from '../Gallery';
 
 class Portfolio extends Component {
 
   render() {
     return (
       <section id="portfolio" style={this.props.style}>
-        <h1>Portfolio</h1>
+        <div className="flex-container">
+          <h1>portfolio</h1>
+          <GalleryImages />
+        </div>
       </section>
     )
   }

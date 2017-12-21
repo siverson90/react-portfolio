@@ -20,20 +20,26 @@ class NavBar extends Component {
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
-          <Nav>
+          <Nav pullRight>
             <NavItem eventKey={1}>
-              <Scrollchor to="#portfolio" className="nav-link">Portfolio</Scrollchor>
+              <Scrollchor 
+                to="#portfolio" 
+                className="nav-link" 
+                animate={{offset: 10, duration: 700}}>Portfolio</Scrollchor>
             </NavItem>
             <NavItem eventKey={2}>
-              <Scrollchor to="#technology" className="nav-link">Technology</Scrollchor>
+              <Scrollchor 
+                to="#technology" 
+                className="nav-link" 
+                animate={{offset: 10, duration: 700}}>Technology</Scrollchor>
             </NavItem>
             <NavItem eventKey={3}>
-              <Scrollchor to="#contact" className="nav-link">Contact</Scrollchor>
+              <Scrollchor 
+                to="#contact" 
+                className="nav-link"
+                animate={{offset: 10, duration: 700}}
+                >Contact</Scrollchor>
             </NavItem>
-          </Nav>
-          <Nav pullRight>
-            <NavItem eventKey={1} href="#">Link Right</NavItem>
-            <NavItem eventKey={2} href="#">Link Right</NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
