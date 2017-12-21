@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Hero from '../../components/Hero';
-import Projects from '../../components/Projects';
+import Portfolio from '../../components/Portfolio';
 import Contact from '../../components/Contact';
 import Technology from '../../components/Technology';
 import NavBar from '../../components/Navbar';
@@ -14,7 +14,7 @@ import NavBar from '../../components/Navbar';
 class Home extends Component {
 
   // components should include:
-  // Projects/work
+  // Portfolio/work
   // Contact
   // About me section
   // Languages to show experience
@@ -29,7 +29,7 @@ class Home extends Component {
           <Hero 
             style={sectionStyle}
           />
-          <Projects 
+          <Portfolio 
             style={sectionStyle}
           />
           <Technology 
