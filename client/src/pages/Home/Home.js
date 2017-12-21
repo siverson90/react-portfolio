@@ -11,7 +11,6 @@ import NavBar from '../../components/Navbar';
       height: "100vh",
       display: "flex",
       backgroundColor: "grey",
-      flexDirection: "row"
     }
 
 class Home extends Component {

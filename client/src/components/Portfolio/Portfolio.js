@@ -6,10 +6,10 @@ class Portfolio extends Component {
   render() {
     return (
       <section id="portfolio" style={this.props.style}>
-        <div className="flex-container">
+      <div className="container">
           <h1>portfolio</h1>
           <GalleryImages />
-        </div>
+      </div>
       </section>
     )
   }
